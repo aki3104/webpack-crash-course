@@ -9,6 +9,9 @@ module.exports = {
   output: {
     filename: 'main.js',
     path: outputPath
+  },
+  //webpack-dev-serverのルートパス
+  devServer: {
+    contentBase: outputPath
   }
-
 }
