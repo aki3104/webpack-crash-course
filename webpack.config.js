@@ -10,6 +10,18 @@ module.exports = {
     filename: 'main.js',
     path: outputPath
   },
+  module: {
+    rules: [
+      {
+        //cssをjsとして取り扱う.逆順に実行される。
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
+      }
+    ]
+  },
   //webpack-dev-serverのルートパス
   devServer: {
     contentBase: outputPath
