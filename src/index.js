@@ -1,7 +1,9 @@
 'use strict'
 import _ from 'lodash'
 import './style.css'
+import './style.scss'
 import logo from './asset15.png'
+
 
 function component(){
   const element = document.createElement('div')
